@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="reveal/css/reveal.min.css">
+		<link rel="stylesheet" href="reveal/css/theme/beige.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="reveal/lib/css/zenburn.css">
+
+		<link rel="stylesheet" href="reveal/css/test.css">
+		<link rel="stylesheet" href="css/font-awesome.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="reveal/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-state="bouvet-intro">
+					<h1>Bilder på web</h1>
+					<h2>Faggruppemøte Brukskvalitet, 19.02.14</h2>
+					<p>
+						av Ole Petter<br/>
+						<small>(reveal.js-tema av Atle)</small>
+					</p>
+					<img src="img/tags.png">
+				</section>
+
+				<section data-state="bouvet-slide">
+					<h2>Bildeformater i rasterformat</h2>
+					<p>
+						<img src="img/raster.png">
+					</p>
+					<p>JPG, PNG, GIF</p>
+				</section>
+
+				<section data-state="bouvet-slide">
+					<h2>Bildeformater i vektorformat</h2>
+					<p>
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+					 version="1.0" width="520" height="520">
+					<style type="text/css">
+					<![CDATA[
+					  path {
+					    fill-opacity:1;stroke:none;stroke-width:1px;stroke-linejoin:miter;stroke-opacity:1
+					  }
+					]]>
+					</style>
+					<defs>
+					  <linearGradient id="dk">
+					    <stop style="stop-color:black;stop-opacity:1" offset="0"/>
+					    <stop style="stop-color:black;stop-opacity:0" offset="1"/>
+					  </linearGradient>
+					  <linearGradient id="lt">
+					    <stop style="stop-color:#ffe681;stop-opacity:1" offset="0"/>
+					    <stop style="stop-color:#ffe681;stop-opacity:0" offset="1"/>
+					  </linearGradient>
+					  <linearGradient x1="136.4" y1="136.4" x2="167.5" y2="167.5" id="tl" xlink:href="#lt" gradientUnits="userSpaceOnUse"/>
+					  <linearGradient x1="136.4" y1="383.6" x2="167.5" y2="352.5" id="bl" xlink:href="#lt" gradientUnits="userSpaceOnUse"/>
+					  <linearGradient x1="383.6" y1="383.6" x2="352.5" y2="352.5" id="br" xlink:href="#dk" gradientUnits="userSpaceOnUse"/>
+					  <linearGradient x1="383.6" y1="136.4" x2="352.5" y2="167.5" id="tr" xlink:href="#dk" gradientUnits="userSpaceOnUse"/>
+					</defs>
+					<path style="fill:#d4a000;stroke:black;stroke-width:9" d="M 260,6.3 L 6.3,260 L 260,513.7 L 513.7,260 L 260,6.3 z"/>
+					<text style="font-size:362px;font-weight:bold;font-family:Times New Roman, serif" y="380" x="200">!</text>
+					<path style="fill:url(#tl)" d="M 260,12.7 L 260,75 L 75,260 L 12.7,260 L 260,12.7 z"/>
+					<path style="fill:url(#bl)" d="M 260,507.3 L 260,445 L 75,260 L 12.7,260 L 260,507.3 z"/>
+					<path style="fill:url(#br)" d="M 260,507.3 L 260,445 L 445,260 L 507.3,260 L 260,507.3 z"/>
+					<path style="fill:url(#tr)" d="M 260,12.7 L 260,75 L 445,260 L 507.3,260 L 260,12.7 z"/>
+					</svg>
+					</p>
+					<p>SVG (Scalable Vector Graphics)</p>
+				</section>
+				<section data-state="bouvet-slide">
+					<pre><code data-trim style="font-size:10px;line-height:12px;">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+ version="1.0" width="520" height="520">
+<style type="text/css">
+<![CDATA[
+  path {
+    fill-opacity:1;stroke:none;stroke-width:1px;stroke-linejoin:miter;stroke-opacity:1
+  }
+]]>
+</style>
+<defs>
+  <linearGradient id="dk">
+    <stop style="stop-color:black;stop-opacity:1" offset="0"/>
+    <stop style="stop-color:black;stop-opacity:0" offset="1"/>
+  </linearGradient>
+  <linearGradient id="lt">
+    <stop style="stop-color:#ffe681;stop-opacity:1" offset="0"/>
+    <stop style="stop-color:#ffe681;stop-opacity:0" offset="1"/>
+  </linearGradient>
+  <linearGradient x1="136.4" y1="136.4" x2="167.5" y2="167.5" id="tl" xlink:href="#lt" gradientUnits="userSpaceOnUse"/>
+  <linearGradient x1="136.4" y1="383.6" x2="167.5" y2="352.5" id="bl" xlink:href="#lt" gradientUnits="userSpaceOnUse"/>
+  <linearGradient x1="383.6" y1="383.6" x2="352.5" y2="352.5" id="br" xlink:href="#dk" gradientUnits="userSpaceOnUse"/>
+  <linearGradient x1="383.6" y1="136.4" x2="352.5" y2="167.5" id="tr" xlink:href="#dk" gradientUnits="userSpaceOnUse"/>
+</defs>
+<path style="fill:#d4a000;stroke:black;stroke-width:9" d="M 260,6.3 L 6.3,260 L 260,513.7 L 513.7,260 L 260,6.3 z"/>
+<text style="font-size:362px;font-weight:bold;font-family:Times New Roman, serif" y="380" x="200">!</text>
+<path style="fill:url(#tl)" d="M 260,12.7 L 260,75 L 75,260 L 12.7,260 L 260,12.7 z"/>
+<path style="fill:url(#bl)" d="M 260,507.3 L 260,445 L 75,260 L 12.7,260 L 260,507.3 z"/>
+<path style="fill:url(#br)" d="M 260,507.3 L 260,445 L 445,260 L 507.3,260 L 260,507.3 z"/>
+<path style="fill:url(#tr)" d="M 260,12.7 L 260,75 L 445,260 L 507.3,260 L 260,12.7 z"/>
+</svg>
+					</code></pre>
+				</section>
+
+				<section data-state="bouvet-slide">
+					<h2>Bilder i HTML</h2>
+					<pre>
+						<code data-trim>
+<img src="img/file_extensions.png">
+						</code>
+					</pre>
+					<p>
+						<img src="img/file_extensions.png">
+					</p>
+				</section>
+
+				<section data-state="bouvet-slide">
+					<h2>Responsive bilder</h2>
+					<pre>
+						<code data-trim>
+img {
+    max-width: 100%;
+}
+						</code>
+					</pre>
+				</section>
+
+				<section data-state="bouvet-slide">
+					<h2>Max-width-quickfix</h2>
+					<div style="width:20%;display:inline-block;background:#cccccc;">
+						<img src="img/file_extensions.png">
+						<small>Pad</small>
+					</div>
+					<div style="width:40%;display:inline-block;background:#cccccc;">
+						<img src="img/file_extensions.png">
+						<small>Desktop</small>
+					</div>
+					<div style="width:10%;display:inline-block;background:#cccccc;">
+						<img src="img/file_extensions.png">
+						<small>Telefon</small>
+					</div>
+				</section>
+
+				<section data-state="bouvet-slide">
+					<h2>Men hva med...</h2>
+					<ul>
+						<li>... filstørrelsen?</li>
+						<li>... retinaskjermer?</li>
+						<li>... klipping av bilder?</li>
+					</ul>
+				</section>
+
+				<section data-state="bouvet-slide">
+					<h2>Filstørrelse og skalering</h2>
+					<p>Hvorfor laste ned et bilde med bredde på 1200px for å vise på en skjerm med bredde på 500px?</p>
+					<p>Bruker unødvendig mye båndbredde og ressurser på telefonen.</p>
+				</section>
+
+				<section data-state="bouvet-slide">
+					<h2>Velg riktig format</h2>
+					<p>SVG: Vektorgrafikk (IE9+, Android 3+)</p>
+					<p>JPG: Foto</p>
+					<p>PNG: Logo, ikoner og annet</p>
+					<p>GIF: Spinner?</p>
+				</section>
+
+				<section data-state="bouvet-slide">
+					<h2>... og komprimer det</h2>
+					<div style="width:40%; display:inline-block;">
+						<img src="img/obama.png">
+						<small>PNG uten komprimering<br><strong>819 kB</strong></small>
+					</div>
+					<div style="width:40%; display:inline-block;">
+						<img src="img/obama-comp.png">
+						<small>PNG med komprimering<br><strong>399 kB</strong></small>
+					</div>
+					<div style="width:40%; display:inline-block;">
+						<img src="img/obamafullhd.jpg">
+						<small>JPG med 100 % kvalitet<br><strong>283 kB</strong></small>
+					</div>
+					<div style="width:40%; display:inline-block;">
+						<img src="img/obamafull.jpg">
+						<small>JPG med 75 % kvalitet<br><strong>62 kB</strong></small>
+					</div>
+				</section>
+
+				<section data-state="bouvet-slide">
+					<h2>Art Direction</h2>
+					<div style="width:80%; display:inline-block;">
+						<img src="img/obamafullhd.jpg">
+					</div>
+					<p>Automatisert klipping gir ikke alltid et godt resultat.</p>
+				</section>
+
+				<section data-state="bouvet-slide">
+					<h2>Art Direction</h2>
+					<div style="width:40%; display:inline-block;">
+						<img src="img/obama-crop.jpg">
+					</div>
+					<div style="width:40%; display:inline-block;vertical-align:top;">
+						<img src="img/obama-crop2.jpg">
+					</div>
+					<p>Er webredaktøren villig til å klippe? </p>
+				</section>
+
+				<section data-state="bouvet-slide">
+					<h2>Art Direction</h2>
+					<div style="width:40%; display:inline-block;">
+						<img src="img/obama-art.jpg">
+					</div>
+					<div style="width:40%; display:inline-block;vertical-align:top;">
+						<img src="img/obama-art2.jpg">
+					</div>
+					<p>Bør systemet ha innebygd løsning for klipping i systemet?</p>
+				</section>
+
+				<section data-state="bouvet-slide">
+					<h2>Retina og skalering</h2>
+					
+					<ul>
+						<li>obama-480px.jpg</li>
+						<li>obama-640px.jpg</li>
+						<li>obama-640px-retina.jpg</li>
+						<li>obama-960px.jpg</li>
+						<li>obama-960px-retina.jpg</li>
+						<li>obama-full.jpg</li>
+					</ul>
+					<p>
+					pluss klippede versjoner
+					</p>
+				</section>
+
+				<section data-state="bouvet-slide">
+					<h2>Server riktig bilde</h2>
+					<ul>
+						<li>Javascript</li>
+						<li>Serverside</li>
+						<li>Image srcset</li>
+						<li>&lt;picture&gt;</li>
+					</ul>
+				</section>
+
+				<section data-state="bouvet-slide">
+					<h2>Javascript</h2>
+					<p>Som for alt annet finnes det en haug<br/>javascriptbiblioteker som vil hjelpe</p>
+					<ul>
+						<li>Mobify.js</li>
+						<li>responsive-images.js</li>
+						<li>Picturefill</li>
+						<li>HiSRC</li>
+						<li>ReSRC.it</li>
+					</ul>
+				</section>
+
+				<section data-state="bouvet-slide">
+					<h2>Serverside</h2>
+					<ul>
+						<li>Adaptive Images</li>
+						<li>Sencha.io src</li>
+					</ul>
+				</section>
+
+				<section data-state="bouvet-slide">
+					<h2>Image srcset</h2>
+					<pre>
+						<code data-trim>
+<img src="fallback.jpg" srcset="small.jpg 640w 1x, 
+small-hd.jpg 640w 2x, large.jpg 1x, large-hd.jpg 2x" alt="…">
+						</code>
+					</pre>
+				</section>
+
+				<section data-state="bouvet-slide">
+					<h2>&lt;picture&gt;</h2>
+					<pre>
+						<code data-trim>
+<picture alt="description">
+  <source src="small.jpg">
+  <source src="medium.jpg" media="(min-width: 640px)">
+  <source src="large.jpg" media="(min-width: 980px)">
+  <img src="fallback.jpg" alt="">
+</picture>
+						</code>
+					</pre>
+				</section>
+
+				<section data-state="bouvet-slide">
+					<h2>Imagesprites</h2>
+					<p>Slå sammen bildene, f.eks. med SpritePad, SpriteMe og SpriteGen</p>
+					<img src="img/xing.png">
+					<pre>
+						<code data-trim>
+<style>
+.icon--user {
+	display: inline-block;
+	width: 11px; height: 14px;
+	background-image: url(img/xing.png);
+	background-position: -225px -9px;
+}
+</style>
+<span class="icon--user"></span>
+						</code>
+					</pre>
+					<p>Ikon: <span style="display: inline-block;width: 11px; height: 14px;background-image: url(img/xing.png);background-position: -225px -9px;"></span></p>
+				</section>
+
+				<section data-state="bouvet-slide">
+					<h2>Icon fonts</h2>
+					<p>
+						FontAwesome, Glyphicons eller lag din egen (<a href="http://fontastic.me/">Fontastic.me</a>)
+					</p>
+					<pre>
+						<code data-trim>
+<span class="fa fa-desktop"></span>
+						</code>
+					</pre>
+					<p>Ikon: <span class="fa fa-desktop"></span></p>
+				</section>
+
+				<section data-state="bouvet-slide">
+					<h2>Skalerer</h2>
+					<pre>
+						<code data-trim>
+font-size: 10em;
+						</code>
+					</pre>
+					<p><span style="font-size:10em;" class="fa fa-desktop"></span></p>
+				</section>
+
+				<section data-state="bouvet-slide">
+					<h2>CSS</h2>
+					<pre>
+						<code data-trim>
+font-size:10em; color: #bouvet;
+						</code>
+					</pre>
+					<p><span style="font-size:10em; color: #FF6600;" class="fa fa-desktop"></span></p>
+				</section>
+
+				<section data-state="bouvet-slide">
+					<h2>Takk for meg</h2>
+					<p>Spørsmål eller kommentarer?</p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="reveal/lib/js/head.min.js"></script>
+		<script src="reveal/js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'reveal/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'reveal/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
